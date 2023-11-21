@@ -13,14 +13,12 @@ header {
 main {
   padding: 20px;
 }
-
-p.pengar::after {
-  content: ' dollares';
+/* Jag tänkte fel när jag föreläste om pseudo-classer.
+first-child påverkar det elementet som är childet.
+Jag skrev div:first-child det betyder när div är first-child för att nå p så måste jag skriva 
+p:first-child eller om jag specifikt vill nå första p:t i diven så skriver jag 
+div p:first-child. 
+div :first-child betyder divvens :first-child vad det än är för element. */
+div p:first-child {
+  color:aqua;
 }
-p.pengar::before {
-  content: '§';
-}
-p::selection {
-  background-color: #f2f2f2;
-  color: white;
-}   
